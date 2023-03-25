@@ -1,0 +1,48 @@
+<% layout('../layouts/admin') -%>
+<div class="row ">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-left">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="/vitals">Vitals</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript: void(0);">Detail</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12">
+        <div class="page-title-box">
+            <h4 class="page-title">View Vital Detail</h4>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3">
+                            <label>dataType: </label> <%= vital.dataType %>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3">
+                            <label>dataTypeUnit: </label> <%= vital.dataTypeUnit %>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group mb-3">
+                            <label>dataTypeValue: </label> <%= vital.dataTypeValue %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    
+    

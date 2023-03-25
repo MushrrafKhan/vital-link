@@ -1,0 +1,48 @@
+<% layout('../layouts/admin') -%>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card bg-transparent">
+            <div class="contact-header d-flex align-items-sm-center media flex-column flex-sm-row bg-white mb-30">
+                <div class="contact-header-left media-body d-flex align-items-center mr-4 col-6">
+                    <!-- Add Concierge -->
+                    <div class="page-title-box">
+                        <div class="page-title-left">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="/vitals">Vital Manager</a></li>
+                                <li class="breadcrumb-item active"><a href="javascript: void(0);">Edit</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- End Add Concierge -->
+                </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form method="post" action="/vitals/edit-vital/<%=vital._id %>">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group mb-3">
+                                <label>Data Type Value<span class="text-danger">*</span></label>
+                                <input type="text" name="dataTypeValue" class="form-control" placeholder="Data Type Value" value="<%=vital.dataTypeValue%>" autocomplete="off" required>
+                                <div class="text-danger name"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 text-left">
+                            <div class="form-group mb-3 text-center">
+                                <button type="submit" class="btn btn-primary waves-effect waves-light">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
